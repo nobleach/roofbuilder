@@ -19,10 +19,10 @@ public class App
       int res = Integer.MAX_VALUE;
 
       for (int i = 0; i < (n - k + 1); i++) {
-        res = Math.min(res, occupied.get(i + k - 1) - occupied.get(i));
+        res = Math.min(res, occupied.get(i + k - 1) - occupied.get(i) + 1);
       }
 
       // add one for occupied spot
-      return res + 1;
+      return res;
     }
 }

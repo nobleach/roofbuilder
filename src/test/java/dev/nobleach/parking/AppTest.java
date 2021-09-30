@@ -14,4 +14,11 @@ public class AppTest
         int actual = App.findMinimumSpan(Arrays.asList(12, 6, 5, 2), 3);
         assertEquals(5, actual);
     }
+
+    @Test
+    public void shouldReturn6()
+    {
+        int actual = App.findMinimumSpan(Arrays.asList(12, 6, 5, 8, 1, 2), 4);
+        assertEquals(6, actual);
+    }
 }
